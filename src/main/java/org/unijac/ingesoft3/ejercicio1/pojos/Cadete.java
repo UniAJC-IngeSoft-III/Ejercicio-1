@@ -25,9 +25,13 @@ public class Cadete extends Persona {
         sb.append(", apellidos='").append(apellidos).append('\'');
         sb.append(", nacimiento=").append(nacimiento);
         sb.append(", edad=").append(getEdad());
-        sb.append(", rango='").append(rango).append('\'');
+        sb.append(", rango='").append(getRango()).append('\'');
         sb.append('}');
         return sb.toString();
+    }
+
+    public Rango getRango() {
+        return rango;
     }
 
     public enum Rango {
